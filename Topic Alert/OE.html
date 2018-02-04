@@ -1,0 +1,3567 @@
+﻿
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>OSA | OE Issues In Progress</title>
+  
+
+  <link rel="stylesheet" href="/css/token-input-facebook.css">
+  <link rel="stylesheet" href="/css/app.css?v=01162018b">
+  <!--<link rel="stylesheet" href="/css/search.css">  Second style redefines first in app.css -->
+  <link rel="stylesheet" href="/css/journal-colors.css">
+  <link rel="stylesheet" href="/css/tools.css?v=01012018">
+  <link rel="stylesheet" href="/css/jqueryui/jquery-ui.css">
+  <link rel="stylesheet" href="/css/jqueryui/jquery-ui-1.10.3.custom.min.css">
+<!--  <link rel="stylesheet" href="/css/prettyphoto/css/prettyPhoto.css">-->
+  
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="/js/vendor/html5shiv.min.js"></script>
+  <script type="text/javascript" src="/js/vendor/respond.min.js"></script>
+  <![endif]-->
+  
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript" src="/js/vendor/custom.modernizr.js"></script>
+</head>
+<body class="journal journal-oe">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="right-arrow" viewBox="0 0 7.7 8.89">
+	<defs>
+		<style>
+			.rarrow {
+				stroke-miterlimit: 10;
+			}
+		</style>
+	</defs>
+		<title>Expand this Topic</title>
+		<desc>clickable element to expand a topic</desc>
+		<polygon class="rarrow" points="0.5 0.87 0.5 8.03 6.7 4.45 0.5 0.87" />
+	</symbol>
+</svg>
+
+	<div class="site">
+		
+<nav class="primary navbar navbar-inverse hidden-xs">
+  <div class="container">
+
+    <div class="secondary-branding navbar-header">
+      <a href="http://www.osa.org" class="secondary-brand navbar-brand"><img src="/images/OSA-sm-logo.png" alt="OSA | The Optical Society" /></a>
+    </div>
+
+    <div class="user-acct navbar-right">
+
+      <ul class="manage-user-acct nav navbar-nav">
+		<li class="nav-link"><a href="#" data-toggle="modal" data-target="#userLogin" id="loginModal">Login or Create Account</a></li>
+		
+      </ul>
+    </div>
+
+    
+  </div>
+</nav>
+<header class="masthead container">
+  <div>
+    <div role="navigation">
+      <div class="mobile-header">
+
+        <div class="primary-branding col-sm-4 col-xs-7">
+          <a href="https://www.osapublishing.org" class="primary-brand"><img src="/images/OSA-Publishing-Logo-Large.png" alt="OSA Publishing" /></a>
+        </div>
+
+        <div class="mobile-nav-toggle visible-xs col-xs-5">
+          <button type="button" class="mobile-nav-btn navbar-toggle" data-toggle="collapse" data-target="#osaGlobalNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <button type="button" class="mobile-search-btn navbar-toggle" data-toggle="collapse" data-target="#mobile-search">
+            <span class="fi-magnifying-glass"></span>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="collapse" id="mobile-search">
+        <div class="header-search col-sm-9 col-xs-12">
+          <div class="input-group form-control">
+            <input id="topSearchTextMobile" type="text" class="form-control input-sm" placeholder="Search All Publications" aria-label="Search All Publications">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default btn-sm search-options">Options <span class="caret"></span></button>
+              <a id="topSearchMobile" class="btn btn-primary btn-sm"><span class="fi-magnifying-glass"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-search hidden-xs">
+        <div class="search-bar input-group main-search">
+  <form name="nojs" action="/search_noscript.cfm" class="form-inline">
+    <input name="q" id="topSearchText" type="text" class="search-text-input form-control input-sm header-search_inputField" placeholder="Search All Publications" aria-label="Search All Publications">
+    <div class="input-group-btn header-search_btnGroup">
+      <button data-toggle="collapse" data-target="#advanced-search-popup" type="button" class="btn btn-default btn-sm search-options">Options <span class="icon-filter"></span> <span class="caret"></span></button>
+      <button id="topSearch" type="submit" class="btn btn-primary btn-sm btn-search">
+        <label for="topSearch" class="icon-search icon-white"></label>
+      </button>
+      
+    </div>
+  </form>
+</div>
+
+<form id="advanced-search-popup" class="collapse advanced-search-popup">
+  <div class="row avs-header">
+    <div class="col-sm-9">
+      <span class="icon-filter filter-icon-sm"></span> Search Options
+    </div>
+    <div class="col-sm-3 close-container">
+      <div class="close-top"><a href="#" data-toggle="collapse" data-target="#advanced-search-popup">Close <strong class="fi-x"></strong></a></div>
+    </div>
+  </div>
+  <!--<div id="formErrors" style="display:none" title="Field Error"><p></p></div>-->
+  <div class="avs-content">
+    <div class="avs_grayout"></div>
+    <div class="row">
+      <div class="col-sm-2 avs-label">Keywords</div>
+      <div class="col-sm-8">
+        <input name="" id="txtSearch" type="text" class="form-control" placeholder="Enter search terms here" aria-label="Enter search terms here" />
+        <input id="chkOtrResource" name="selectionChk" type="checkbox" value="" />  <span class="avs-inline-label-left">Only if other resources available (images, video, datasets)</span>
+      </div>
+      <div class="col-sm-2">
+        <div><input name="chkSearchIn" type="checkbox" id="chk-searchin-metadata" CHECKED /> <span class="avs-inline-label-left">Title and Abstract</span></div>
+        <div><input name="chkSearchIn" type="checkbox" id="chk-searchin-all"/> <span class="avs-inline-label-left">All text</span></div>
+      </div>
+    </div>
+    <div class="row space-top">
+      <div class="col-sm-2 avs-label">Authors</div>
+      <div class="col-sm-8">
+        <input type="text" id="authorSearch" class="form-control" placeholder="Enter author names here" />
+        <span class="small muted">&bull; Use these formats for best results: Smith or J Smith</span>
+        <span class="small muted"><br>&bull; Use a comma to separate multiple people: J Smith, RL Jones, Macarthur</span>
+      </div>
+      <div class="col-sm-2">
+        Any :&nbsp;<input id="chkAny" name="chkAnyAll" type="radio" value="any" checked="checked"/>
+        All :&nbsp;<input id="chkAll" name="chkAnyAll" type="radio" value="all"/>
+      </div>
+    </div>
+    <div class="row space-top">
+      <div class="col-sm-12">
+        <div class="avs-help avs-divider">
+          <a class="avs-help-link" data-action='slide-toggle' data-target='#avsHint1' href="#" title="Help Link">?</a>
+          <div id="avsHint1" class="avs-help-message">
+            <strong>Tips for preparing a search:</strong>
+            <ul>
+              <li>Keep it simple - don't use too many different parameters.</li>
+              <li>Separate search groups with parentheses and Booleans. Note the Boolean sign must be in upper-case.
+                <ul>
+                  <li>Example: (diode OR solid-state) AND laser [search contains "diode" or "solid-state" and laser]</li>
+                  <li>Example: (photons AND downconversion) - pump [search contains both "photons" and "downconversion" but not "pump"]</li>
+                </ul>
+              </li>
+              <li>Improve efficiency in your search by using wildcards.</li>
+                <ul>
+                  <li>Asterisk ( * ) -- Example: "elect*" retrieves documents containing "electron," "electronic," and "electricity"</li>
+                  <li>Question mark (?) -- Example: "gr?y" retrieves documents containing "grey" or "gray"</li>
+                </ul>
+              <li>Use quotation marks " " around specific phrases where you want the entire phrase only.</li>
+              <li>For best results, use the separate Authors field to search for author names.</li>
+              <li>Author name searching:
+                <ul>
+                  <li>Use these formats for best results: Smith or J Smith</li>
+                  <li>Use a comma to separate multiple people: J Smith, RL Jones, Macarthur</li>
+                  <li>Note: Author names will be searched in the keywords field, also, but that may find papers where the person is mentioned, rather than papers they authored.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        Search in:
+      </div>
+    </div>
+
+    <div class="row space-top">
+      <div class="col-sm-2">
+          <input name="selectionChk" id="chkJournals" type="checkbox" class="checkbox" CHECKED> <span class="avs-inline-label-left">Journals</span>
+      </div>
+      <div class="col-sm-7">
+        <div class="input-collapse">
+          <input id="advsJournalsSelector" type="text" class="form-control" placeholder="All journals (type names or look up list)">
+          <div class="input-group-btn" name="journal">
+            <button type="button" class="btn btn-default dropdown-toggle avs-modal-open" data-toggle="dropdown"><span class="caret"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 avs-tiny">
+        <div class="avs-tiny_field">
+          Vol. <input id="volSearch" type="text" class="form-control" placeholder="All" />
+        </div>
+        <div class="avs-tiny_field">
+          Issue <input id="issueSearch" type="text" class="form-control" placeholder="All" />
+        </div>
+        <div class="avs-tiny_field">
+          Page <input id="pageSearch" type="text" class="form-control" placeholder="All" />
+        </div>
+      </div>
+    </div>
+    <div class="row space-top-lg">
+      <div class="col-sm-2">
+        <input id="chkConferences" type="checkbox" class="checkbox" CHECKED> <span class="avs-inline-label-left">Proceedings</span>
+      </div>
+      <div class="col-sm-7">
+        <div class="input-collapse">
+          <input type="text" id="advsProceedingSelector" class="form-control" placeholder="All proceedings (type names or look up list)">
+          <div class="input-group-btn" name="proceeding">
+            <button type="button" class="btn btn-default dropdown-toggle avs-modal-open" data-toggle="dropdown"><span class="caret"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 avs-tiny">
+        <div class="avs-tiny_field">
+          Year <input id="yearSearch" type="text" class="form-control" placeholder="All" />
+        </div>
+        <div class="avs-tiny_field avs-tiny_field--expanded">
+          Paper # <input id="sessionPagerSearch" type="text" class="form-control" placeholder="All" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row space-top">
+      <div class="col-md-12">
+        <div class="avs-help avs-divider"></div>
+      </div>
+    </div>
+
+    <div class="row space-top">
+      <div class="col-sm-3">Publication years</div>
+      <div class="col-sm-5">
+        <div class="form-inline">
+          <div class="form-group">
+            <span class="avs-inline-label-right">From</span>
+            <input id="startYear" type="text" class="form-control year-inline" placeholder="1917" maxlength="4"/>
+            <span class="avs-inline-label-left avs-inline-label-right">To</span>
+            <input id="endYear" type="text" class="form-control year-inline" placeholder="2018" maxlength="4"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div><small class="muted">Enter only one date to search</small></div>
+        <div><small class="muted">After ("From") or Before ("To")</small></div>
+      </div>
+    </div>
+
+    <div class="row space-top">
+      <div class="col-md-12">
+        <div class="avs-help avs-divider"></div>
+      </div>
+    </div>
+
+    <div class="avs_topics">
+      <div class="row space-top mbottom-10">
+        <div class="col-sm-3">Optics &amp; Photonics Topics</div>
+        <div class="col-sm-9 input-collapse avs_topics-search">
+            <a id="browsetopicsbutton" href="#" class="btn btn-default avs_topics-browse-btn">Browse All Topics</a>
+            <input type="text" id="advsTopicsSelector" class="form-control avs_topics-search-field" placeholder="Search All Topics"><br/>
+        </div>
+      </div>
+      
+      <div class="row space-top selectedtopicsadv mbottom-10">
+        <div class="col-md-2"><small class="muted">Selected topics</small></div>
+        <div class="col-md-10" id="advTopicsSelectedList"></div>
+      </div>
+      <div class="row selectedtopicsadv mbottom-10">
+        <div class="col-md-2"></div>
+        <div class="col-md-10 muted">
+          <input id="chkAnyTopic" name="chkAnyAllTopic" type="radio" value="any" checked="checked"/> Find articles with <strong>any</strong> selected topics
+          &nbsp;&nbsp;<input id="chkAllTopic" name="chkAnyAllTopic" type="radio" value="all"/> Find articles with <strong>all</strong> selected topics
+        </div>
+      </div>
+      <div class="row hidden mbottom-20" id="pickTopicsBrowse">
+        <div class="col-md-12 mbottom-20 ">
+          <strong>Browse All Topics</strong><br>
+          Click the <svg class="selection-list_arrow"><use xlink:href="#right-arrow" /></svg> to reveal subtopics. Use the checkbox to select a topic to filter your search.
+        </div>
+        <div id="advBrowseTopics" class="col-md-12">
+        </div>
+      </div>
+      <div class="row space-top">
+        <div class="col-md-12">
+          <div class="avs-help avs-divider">
+            <a class="avs-help-link" data-action='slide-toggle' data-target='#avsHint2' href="#" title="Help Link">?</a>
+            <div id="avsHint2" class="avs-help-message">
+              <strong>About Optics &amp; Photonics Topics</strong>
+              <br>OSA Publishing developed the Optics and Photonics Topics to help organize its diverse content more accurately by topic area.  This topic browser contains over 2400 terms and is organized in a three-level hierarchy. <a href="/author/thesaurus/OSAThes_home.cfm" target="_blank">Read more.</a>
+              <br><br>Topics can be refined further in the search results. The Topic facet will reveal the high-level topics associated with the articles returned in the search results.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row space-top">
+      <div class="col-sm-2">Special Collections</div>
+      <div class="col-sm-5 input-collapse">
+        <input id="specialcollections_ee" name="specialcollections" type="checkbox" value="ee"/> <label class="avs-inline-label-left" for="specialcollections_ee">Energy Express</label><br/>
+        <input id="specialcollections_el" name="specialcollections" type="checkbox" value="elnotes"/> <label class="avs-inline-label-left" for="specialcollections_el">Engineering and Laboratory Notes</label><br/>
+      </div>
+      <div class="col-sm-5 input-collapse">
+        <input id="specialcollections_spt" name="specialcollections" type="checkbox" value="spotlight"/> <label class="avs-inline-label-left" for="specialcollections_spt">Spotlight on Optics</label><br/>
+        <input id="specialcollections_tut" name="specialcollections" type="checkbox" value="aoptutorial"/> <label class="avs-inline-label-left" for="specialcollections_tut">AOP Tutorials</label>
+      </div>
+    </div>
+
+    <div class="row space-top">
+      <div class="col-md-12">
+        <div class="avs-help avs-divider"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6"><a id="clearFilters" href="#" class="btn btn-default">Clear my choices above</a></div>
+    <div class="col-sm-6"><a id="cmdSearch" href="#" class="btn btn-primary pull-right"><strong class="fi-magnifying-glass"></strong>&nbsp; Search</a></div>
+    </div>
+
+  </div>
+  <input type="hidden" name="origsearchstr" id="origsearchstr" value=""/>
+  <input type="hidden" name="facetsearchstr" id="facetsearchstr" value=""/>
+  <input type="hidden" name="facetavoidstr" id="facetavoidstr" value=""/>
+</form>
+
+      </div>
+
+      <div class="site-nav-container col-lg-8 col-md-12">
+        
+<nav class="primary-site-nav collapse navbar-collapse" id="osaGlobalNav">
+	<ul class="nav navbar-nav navbar-main" id="first-nav">
+		<li class="primary-site-nav__dropdown">
+			<a href="/about.cfm" class="dropdown-toggle hidden-xs" id="select_journals">Journals <span class="caret"></span></a>
+			<a href="" class="dropdown-toggle visible-xs" data-toggle="dropdown" data-target="select_journals--mobile__menu" id="select_journals--mobile">Journals <span class="caret"></span></a>
+			
+			<div class="visible-xs">
+				<div id="select_journals--mobile__menu" class="dropdown-menu dropdown-one-col">
+					<ul>
+						<li><a href="/aop">Advances in Optics and Photonics</a></li>
+						<li><a href="/ao">Applied Optics</a></li>
+						<li><a href="/as">Applied Spectroscopy</a></li>
+						<li><a href="/boe">Biomedical Optics Express</a></li>
+						<li><a href="/col">Chinese Optics Letters</a></li>
+						<li><a href="/copp">Current Optics and Photonics</a></li>
+						<li><a href="/jlt">Journal of Lightwave Technology</a></li>
+						<li><a href="/jnirs">Journal of Near Infrared Spectroscopy</a></li>
+						<li><a href="/jot">Journal of Optical Technology</a></li>
+						<li><a href="/jocn">Journal of Optical Communications and Networking</a></li>
+						<li><a href="/josaa">Journal of the Optical Society of America A</a></li>
+						<li><a href="/josab">Journal of the Optical Society of America B</a></li>
+						<li><a href="/optica">Optica</a></li>
+						<li><a href="/ome">Optical Materials Express</a></li>
+						<li><a href="/oe">Optics Express</a></li>
+						<li><a href="/ol">Optics Letters</a></li>
+						<li><a href="/prj">Photonics Research</a></li>
+						
+						<li class="nav-link-heading">Legacy Journals</li>
+						<li><a href="/jdt">Journal of Display Technology (2005-2016)</a></li>
+						<li><a href="/josk">Journal of the Optical Society of Korea (1997-2016)</a></li>
+						<li><a href="/jon">Journal of Optical Networking (2002-2009)</a></li>
+						<li><a href="/josa">Journal of the Optical Society of America (1917-1983)</a></li>
+						<li><a href="/on">Optics News (1975-1989)</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown-menu dropdown-two-col-lg dropdown-wide">
+				<div class="row">
+					<div class="col-sm-6">
+						<ul>
+							<li><a href="/aop">Advances in Optics and Photonics</a></li>
+							<li><a href="/ao">Applied Optics</a></li>
+							<li><a href="/as">Applied Spectroscopy</a></li>
+							<li><a href="/boe">Biomedical Optics Express</a></li>
+							<li><a href="/col">Chinese Optics Letters</a></li>
+							<li><a href="/copp">Current Optics and Photonics</a></li>
+							<li><a href="/jlt">Journal of Lightwave Technology</a></li>
+							<li><a href="/jnirs">Journal of Near Infrared Spectroscopy</a></li>
+							<li><a href="/jot">Journal of Optical Technology</a></li>
+							<li><a href="/jocn">Journal of Optical Communications and Networking</a></li>
+							<li><a href="/josaa">Journal of the Optical Society of America A</a></li>
+							<li><a href="/josab">Journal of the Optical Society of America B</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul>
+							<li><a href="/optica">Optica</a></li>
+							<li><a href="/ome">Optical Materials Express</a></li>
+							<li><a href="http://www.osa-opn.org" target="_blank">Optics and Photonics News <span class="fa fa-external-link"></span></a></li>
+							<li><a href="/oe">Optics Express</a></li>
+							<li><a href="/ol">Optics Letters</a></li>
+							<li><a href="/prj">Photonics Research</a></li>
+							
+							<li class="nav-link-heading">Legacy Journals</li>
+							<li><a href="/jdt">Journal of Display Technology (2005-2016)</a></li>
+							<li><a href="/josk">Journal of the Optical Society of Korea (1997-2016)</a></li>
+							<li><a href="/jon">Journal of Optical Networking (2002-2009)</a></li>
+							<li><a href="/josa">Journal of the Optical Society of America (1917-1983)</a></li>
+							<li><a href="/on">Optics News (1975-1989)</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="primary-site-nav__dropdown">
+			<a href="/conferences.cfm" class="dropdown-toggle" id="select_proceedings">Proceedings <span class="caret"></span></a>
+			<div class="dropdown-menu dropdown-two-col-lg">
+				<div class="row">
+					<div class="col-sm-6">
+						<ul>
+							<li class="nav-link-heading">Find Proceedings</li>
+							
+							<li><a href="/conferences.cfm">By Year</a></li>
+							<li><a href="/conferences.cfm?findby=conference">By Conference</a></li>
+							<li class="nav-link-heading">Featured</li>
+							<li><a href="/conference.cfm?meetingid=5">Optical Fiber Communication (OFC)</a></li>
+							<li><a href="/conference.cfm?meetingid=124">Conference on Lasers and Electro-Optics (CLEO)</a></li>
+							<li><a href="/conference.cfm?meetingid=56">Frontiers in Optics (FiO)</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-sm-6">
+						<ul>
+							<li class="nav-link-heading">Newly Published</li>
+							
+							
+								<li><a href="/conference.cfm?meetingid=144&yr=2017">Asia Communications and Photonics Conference</a></li>
+							
+								<li><a href="/conference.cfm?meetingid=131&yr=2017">Optical Nanostructures and Advanced Materials for Photovoltaics</a></li>
+							
+								<li><a href="/conference.cfm?meetingid=174&yr=2017">Optics and Photonics for Energy and the Environment</a></li>
+							
+								<li><a href="/conference.cfm?meetingid=109&yr=2017">Optics for Solar Energy</a></li>
+							
+								<li><a href="/conference.cfm?meetingid=181&yr=2017">Solid-State Lighting</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="primary-site-nav__dropdown hidden-xs">
+			<a href="#global-nav" class="dropdown-toggle" id="select_other_resources">Other Resources <span class="caret"></span></a>
+			<div class="dropdown-menu dropdown-two-col-lg">
+				<div class="row">
+					<div class="col-sm-6">
+						<ul>
+							<li class="nav-link-heading">Publications</li>
+							<li><a href="/books/bookshelf/lasers.cfm"><em>Lasers</em> eBook</a></li>
+							<li><a href="/books/bookshelf/osa-century-optics.cfm"><em>OSA Century of Optics</em></a></li>
+							<li><a href="/books/bookshelf/opn-centennial-ebooklets.cfm">OPN Centennial eBooklets</a></li>
+							<li><a href="/oida/reports.cfm">OIDA Reports</a></li>
+							<li class="nav-link-heading">Products and Services</li>
+							<li><a href="/osadigitalarchive.cfm">Digital Archive</a></li>
+							<li><a href="/isp.cfm">Interactive Science Publishing (ISP)</a></li>
+							<li><a href="http://imagebank.osa.org" target="_blank">Optics ImageBank <span class="fa fa-external-link"></span></a></li>
+							<li><a href="/spotlight">Spotlight on Optics</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul>
+							<li class="nav-link-heading">Information For</li>
+						    <li><a href="/author/author.cfm">Authors</a></li>
+						    <li><a href="/submit/review/peer_review.cfm">Reviewers</a></li>
+						    <li><a href="/library/">Librarians</a></li>
+							<li class="nav-link-heading">Regional Sites</li>
+							<li><a href="/china/">OSA Publishing China</a></li>
+							
+							<li class="nav-link-heading">Open Access Information</li>
+							<li><a href="/submit/review/open-access-policy-statement.cfm">Open Access Statement and Policy</a></li>
+							<li><a href="/library/license_v1.cfm">Terms for Journal Article Reuse</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+
+  <ul class="nav navbar-nav navbar-right navbar-secondary" id="second-nav">
+    <li class="primary-site-nav__dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="my_favorites">My Favorites <span class="caret"></span></a>
+      <div class="dropdown-menu dropdown-one-col">
+        <ul>
+          
+          <li><a href="/user">Go to My Account</a></li>
+          
+          <li><a href="#" data-toggle="modal" data-target="#userLogin">Login to access favorites</a></li>
+          
+        </ul>
+      </div>
+    </li>
+    <li class="primary-site-nav__dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="recent_pages">Recent Pages <span class="caret"></span></a>
+      <div class="dropdown-menu dropdown-one-col">
+        <ul class="recent-page-list">
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+	
+  <ul class="hidden-sm hidden-md hidden-lg manage-user-acct--mobile">
+<li class="nav-link"><a href="#" data-toggle="modal" data-target="#userLogin" id="loginModal">Login or Create Account</a></li>
+
+  </ul>
+
+</nav>
+
+      </div>
+    </div>
+  </div>
+</header> 
+
+<div class="content container">
+	
+<div class="secondary-nav-container">
+	<nav class="secondary-nav">
+		<ul class="secondary-nav-list">
+			<li class="secondary-nav-item hidden-md hidden-lg hidden-sm">
+				<div class="mobile-journal-header">
+		<a href="/oe/home.cfm"><h1>Optics Express</h1>
+		<p class="primary-editors">Andrew M. Weiner, Editor-in-Chief</p></a>
+	</div>
+			</li>
+			<li class="secondary-nav-item hidden-xs ">
+				<a href="/oe/home.cfm" class="secondary-nav-item_link">Journal Home</a>
+			</li>
+			<li class="secondary-nav-item ">
+				<a class="secondary-nav-item_link" href="/oe/journal/oe/about.cfm">About</a>
+			</li>
+			<li class="secondary-nav-item active">
+				<a class="secondary-nav-item_link" href="/oe/upcomingissue.cfm">Issues in Progress</a>
+			</li>
+			<li class="secondary-nav-item ">
+				<a class="secondary-nav-item_link" href="/oe/issue.cfm">Current Issue</a>
+			</li>
+			<li class="secondary-nav-item ">
+				<a class="secondary-nav-item_link" href="/oe/browse.cfm">All Issues</a>
+			</li>
+			<li class="secondary-nav-item ">
+				<a class="secondary-nav-item_link" href="/oe/feature.cfm">Feature Issues</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane active" id="journal-home">
+			<div class="content-wrapper row">
+				<div class="content-main col-md-9 col-sm-8">
+					
+	<section>
+		<div class="content-module journal-info">
+				
+			<div class="journal-screen hidden-xs">
+				<a href="/oe"><img class="journal-thumbnail" src="/images/osa-oe.jpg" role="presentation" alt="Optics Express" /></a>
+				
+			</div>
+			<div class="journal-info-content hidden-xs">
+				
+					<h1 class="container-title">Optics Express</h1>
+					
+						<p class="primary-editors">
+							Andrew M. Weiner, Editor-in-Chief
+						</p>
+					
+						<p class="editorial-board">
+							<a href="/oe/journal//oe/about.cfm#board">Editorial Board</a>
+							
+						</p>
+					
+			</div>
+			<div class="clearfix"></div>
+			
+			
+				<h2 class="heading-block-header below-thumbnail">Issues in Progress &nbsp;
+					<small>1 issue</small>
+				</h2>
+			
+		</div>
+	</section>
+
+<section class="content-module">
+
+	<ul class="issue-nav-list hidden-xs">
+		
+			<li class="issue-nav-list-item"><a href="#x2631">Vol. 26, Iss. 3 -- February 5, 2018 &nbsp;  &bull; pp: 2181-3173</a></li>
+		
+	</ul>
+
+	<div class="journal-filters-container">
+		<div class="journal-filters">
+			<div class="btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-selected"></span> Actions <span class="caret"></span></a>
+				<ul class="dropdown-menu" id="citation-dropdown">
+					<li>Export Citations as</li>
+					<li><a id="export_bibtext" href="#" onclick="checkboxActions('export_bibtex'); return false;">BibTex</a></li>
+					<li><a id="export_endnote" href="#" onclick="checkboxActions('export_endnote'); return false;">Endnote (RIS)</a></li>
+					<li><a id="export_html" href="#" onclick="checkboxActions('export_html'); return false;">HTML</a></li>
+					<li><a id="export_plain_text" href="#" onclick="checkboxActions('export_txt'); return false;">Plain Text</a></li>
+					<li>Save to My Favorites</li>
+					<li><a id="export_save_to_collections" href="#" onclick="checkboxActions('savetofav'); return false;">Choose folder...</a></li>
+				</ul>
+			</div>
+
+			<div class="pull-right">
+				<span class="filter-label">Sort: </span>
+				<div class="btn-group">
+					
+					<button id="sortByIssue" class="btn btn-default btn-xs active" onclick="sortUpcomingBy('issue')">Issue Date</button>
+					<button id="sortByPublished" class="btn btn-default btn-xs" onclick="sortUpcomingBy('published')">Published Date</button>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<form name="articlesForm" id="articlesForm" method="post" action="" style="display: inline">
+	<input type="hidden" name="ArticleAction" value="">
+	<div class="journal-in-progress-list accordion" id="accordion-in-progress">
+		
+			<div class="osap-accordion">
+			<input type="checkbox" class="osap-accordion__toggle" autocomplete="off" id="current-691931">
+				
+			<label for="current-691931" class="osap-accordion__label">
+				Vol. 26, Iss. 3 -- February 5, 2018 | Research Articles
+				<i class="fa osap-accordion__chevron"></i>
+			</label>	
+			<a name="x2631"></a>
+			<div class="osap-accordion__content">
+				
+				
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs " name="articles" value="381097" id="acheck381097" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2650&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2650">Surface gap solitons in a nonlinear fractional Schr&#x000F6;dinger equation</a></p>
+				<p class="article-authors">Jing Xiao, Zhaoxia Tian, Changming Huang, and Liangwei Dong</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2650-2658 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2650&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2650&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691934')"/>
+							<h2 class="toc-header--level3 ">Atmospheric and Oceanic Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691934" name="articles" value="381131" id="acheck381131" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2668&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2668">Enhanced underwater ranging using an optical vortex</a></p>
+				<p class="article-authors">Austin Jantzi, William Jemison, Alan Laux, Linda Mullen, and Brandon Cochenour</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2668-2674 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2668&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2668&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691935')"/>
+							<h2 class="toc-header--level3 ">Category Pending</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381059" id="acheck381059" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2341&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2341">Microwave spectroscopy measurement of ultracold ground state molecules produced via short-range photoassociation</a></p>
+				<p class="article-authors">Zhonghao Li, Zhonghua Ji, Ting Gong, Juanjuan Cao, Yanting Zhao, Liantuan Xiao, and Suotang Jia</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2341-2348 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2341&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2341&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381063" id="acheck381063" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2380&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2380">Fluorescence emission difference with surface plasmon-coupled emission applied in confocal microscopy</a></p>
+				<p class="article-authors">Kang Jiang, Xinrui Lei, Kuanguo Li, Yonghua Lu, and Pei Wang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2380-2389 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2380&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2380&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381065" id="acheck381065" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2400&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2400">Assessing performance of modern Brillouin spectrometers</a></p>
+				<p class="article-authors">Zachary Coker, Maria Troyanova‐Wood, Andrew J. Traverso, Talgat Yakupov, Zhandos N. Utegulov, and Vladislav V. Yakovlev</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2400-2409 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2400&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2400&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381067" id="acheck381067" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2427&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2427">1000 fps computational ghost imaging using LED-based structured illumination</a></p>
+				<p class="article-authors">Zi-Hao Xu, Wen Chen, José Penuelas, Miles Padgett, and Ming-Jie Sun</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2427-2434 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2427&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2427&seq=0" target="_blank" id="link-pdf">PDF</a> 
+						&nbsp;[Suppl. Mat. (1)]
+					
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381073" id="acheck381073" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2495&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2495">Theory and analysis of a large field polarization imaging system with obliquely incident light</a></p>
+				<p class="article-authors">Xiaotian Lu, Weiqi Jin, Li Li, Xia Wang, Su Qiu, and Jing Liu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2495-2508 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2495&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2495&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381087" id="acheck381087" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2535&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2535">Method for simultaneous measurement of five DOF motion errors of a rotary axis using a single-mode fiber-coupled laser</a></p>
+				<p class="article-authors">Jiakun Li, Qibo Feng, Chuanchen Bao, and Yuqiong Zhao</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2535-2545 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2535&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2535&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381088" id="acheck381088" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2546&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2546">Probing changes in tilt angle with 20 nanoradian resolution using an extrinsic Fabry-Perot interferometer-based optical fiber inclinometer</a></p>
+				<p class="article-authors">Yiyang Zhuang, Yizheng Chen, Chen Zhu, Rex E. Gerald, and Jie Huang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2546-2558 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2546&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2546&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381089" id="acheck381089" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2559&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2559">Surface modes in plasmonic Bragg fibers with negative average permittivity</a></p>
+				<p class="article-authors">Hanying Deng, Yihang Chen, Nicolae C. Panoiu, Boris A. Malomed, and Fangwei Ye</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2559-2568 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2559&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2559&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381090" id="acheck381090" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2569&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2569">Advanced RF and microwave functions based on an integrated optical frequency comb source</a></p>
+				<p class="article-authors">Xingyuan Xu, Jiayang Wu, Thach G. Nguyen, Mehrdad Shoeiby, Sai T. Chu, Brent E. Little, Roberto Morandotti, Arnan Mitchell, and David J. Moss</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2569-2583 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2569&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2569&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381092" id="acheck381092" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2599&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2599">Virtual image determination for mirrored surfaces</a></p>
+				<p class="article-authors">Jason C. Radel, Victor Belanger-Garnier, and Marc P. Hegedus</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2599-2612 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2599&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2599&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381095" id="acheck381095" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2634&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2634">Determination of boron with molecular emission using laser-induced breakdown spectroscopy combined with laser-induced radical fluorescence</a></p>
+				<p class="article-authors">L.B. Guo, Z.H. Zhu, J.M. Li, Y. Tang, S.S Tang, Z.Q. Hao, X.Y. Li, Y.F. Lu, and X.Y. Zeng</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2634-2642 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2634&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2634&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381098" id="acheck381098" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2659&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2659">Fast coarse-fine locating method for &#x03C6;-OTDR</a></p>
+				<p class="article-authors">Xuanwei Mei, Fufei Pang, Huanhuan Liu, Guoqin Yu, Yuying Shao, Tianyu Qian, Chengbo Mou, Longbao Lv, and Tingyun Wang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2659-2667 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2659&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2659&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381132" id="acheck381132" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2675&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2675">Suspended polarization beam splitter on silicon-on-insulator</a></p>
+				<p class="article-authors">Carlos Errando-Herranz, Sandipan Das, and Kristinn B. Gylfason</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2675-2681 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2675&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2675&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381133" id="acheck381133" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2682&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2682">Lippmann waveguide spectrometer with enhanced throughput and bandwidth for space and commercial applications</a></p>
+				<p class="article-authors">Mohammad Madi, Frederik Ceyssens, Ivan Shorubalko, Hans Peter Herzig, Benedikt Guldimann, and Philippe Giaccari</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2682-2707 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2682&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2682&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381134" id="acheck381134" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2708&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2708">In situ retrieval and correction of aberrations in moldless lenses using Fourier ptychography</a></p>
+				<p class="article-authors">Tahseen Kamal, Lu Yang, and Woei Ming Lee</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2708-2719 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2708&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2708&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381135" id="acheck381135" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2720&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2720">Controlling multiple-dipole interactions mediated by nanophotonic structures and their application in W state generation</a></p>
+				<p class="article-authors">Lu Sun, Qian Huang, Shengli Zhang, and Jianhua Ji</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2720-2730 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2720&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2720&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381136" id="acheck381136" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2731&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2731">Peculiar near-band-edge emission of polarization-dependent XEOL from a non-polar a-plane ZnO wafer</a></p>
+				<p class="article-authors">Bi-Hsuan Lin, Yung-Chi Wu, Huang-Yeh Chen, Shao-Chin Tseng, Jian-Xing Wu, Xiao-Yun Li, Bo-Yi Chen, Chien-Yu Lee, Gung-Chian Yin, Shih-Hung Chang, Mau-Tsu Tang, and Wen-Feng Hsieh</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2731-2739 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2731&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2731&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381137" id="acheck381137" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2740&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2740">Super-resolution fluorescence blinking imaging using modified Fourier ptychography</a></p>
+				<p class="article-authors">Jingjing Wu, Bin Yu, Saiwen Zhang, Siwei Li, Xuehua Wang, Danni Chen, and Junle Qu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2740-2748 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2740&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2740&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381138" id="acheck381138" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2749&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2749">Versatile reconstruction framework for diffraction tomography with intensity measurements and multiple scattering</a></p>
+				<p class="article-authors">Thanh-An Pham, Emmanuel Soubies, Alexandre Goy, Joowon Lim, Ferréol Soulez, Demetri Psaltis, and Michael Unser</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2749-2763 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2749&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2749&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381139" id="acheck381139" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2764&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2764">Heralded generation of high-purity ultrashort single photons in programmable temporal shapes</a></p>
+				<p class="article-authors">V. Ansari, E. Roccia, M. Santandrea, M. Doostdar, C. Eigner, L. Padberg, I. Gianani, M. Sbroscia, J. M. Donohue, L. Mancino, M. Barbieri, and C. Silberhorn</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2764-2774 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2764&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2764&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381140" id="acheck381140" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2775&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2775">Single-shot molecular orbital tomography with orthogonal two-color fields</a></p>
+				<p class="article-authors">Chunyang Zhai, Xiaofan Zhang, Xiaosong Zhu, Lixin He, Yinfu Zhang, Baoning Wang, Qingbin Zhang, Pengfei Lan, and Peixiang Lu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2775-2784 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2775&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2775&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381141" id="acheck381141" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2785&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2785">Temporal evolution of condensation and precipitation induced by a 22-TW laser</a></p>
+				<p class="article-authors">Jingjing Ju, Haiyi Sun, Xingkai Hu, Yonghong Liu, Yaoxiang Liu, Jingwei Wang, Cheng Wang, Tie-Jun Wang, Xueliang Guo, Jiansheng Liu, See Leang Chin, Ruxin Li, and Zhizhan Xu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2785-2793 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2785&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2785&seq=0" target="_blank" id="link-pdf">PDF</a> 
+						&nbsp;[Suppl. Mat. (1)]
+					
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381142" id="acheck381142" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2794&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2794">High key rate continuous-variable quantum key distribution with a real local oscillator</a></p>
+				<p class="article-authors">Tao Wang, Peng Huang, Yingming Zhou, Weiqi Liu, Hongxin Ma, Shiyu Wang, and Guihua Zeng</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2794-2806 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2794&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2794&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381143" id="acheck381143" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2807&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2807">Spatial-mode-coupling-based dispersion engineering for integrated optical waveguide</a></p>
+				<p class="article-authors">Yu Li, Jiachen Li, Yuandong Huo, Minghua Chen, Sigang Yang, and Hongwei Chen</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2807-2816 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2807&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2807&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381144" id="acheck381144" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2817&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2817">Giant Goos-H&#x00E4;nchen shifts in non-Hermitian dielectric multilayers incorporated with graphene</a></p>
+				<p class="article-authors">Dong Zhao, Shaolin Ke, Qingjie Liu, Bing Wang, and Peixiang Lu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2817-2828 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2817&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2817&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381158" id="acheck381158" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2891&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2891">Large-volume, low-cost, high-precision FMCW tomography using stitched DFBs</a></p>
+				<p class="article-authors">Thomas DiLazaro and George Nehmetallah</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2891-2904 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2891&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2891&seq=0" target="_blank" id="link-pdf">PDF</a> 
+						&nbsp;[Suppl. Mat. (4)]
+					
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381164" id="acheck381164" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2965&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2965">Superconducting nanowire single photon detection system for space applications</a></p>
+				<p class="article-authors">Lixing You, Jia Quan, Yong Wang, Yuexue Ma, Xiaoyan Yang, Yanjie Liu, Hao Li, Jianguo Li, Juan Wang, Jingtao Liang, Zhen Wang, and Xiaoming Xie</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2965-2971 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2965&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2965&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381165" id="acheck381165" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2972&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2972">Buildup dynamics of dissipative soliton in an ultrafast fiber laser with net-normal dispersion</a></p>
+				<p class="article-authors">Hong-Jie Chen, Meng Liu, Jian Yao, Song Hu, Jian-Bo He, Ai-Ping Luo, Wen-Cheng Xu, and Zhi-Chao Luo</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2972-2982 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2972&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2972&seq=0" target="_blank" id="link-pdf">PDF</a> 
+						&nbsp;[Suppl. Mat. (3)]
+					
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381166" id="acheck381166" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2983&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2983">Multiple surface expansion method for design of freeform imaging systems</a></p>
+				<p class="article-authors">Ruirui Tang, Benqi Zhang, Guofan Jin, and Jun Zhu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2983-2994 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2983&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2983&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381187" id="acheck381187" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2995&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2995">Polarization switch of four-wave mixing in a lawtunable fiber optical parametric oscillator</a></p>
+				<p class="article-authors">Kangwen Yang, Pengbo Ye, Shikai Zheng, Jieshi Jiang, Kun Huang, Qiang Hao, and Heping Zeng</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2995-3003 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2995&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2995&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381188" id="acheck381188" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3004&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3004">Clarification of surface modes of a periodic nanopatch metasurface</a></p>
+				<p class="article-authors">Xiaomeng Jia, Patrick Bowen, Zhiqin Huang, Xiaojun Liu, Christopher Bingham, and David R. Smith</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3004-3012 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3004&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3004&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381189" id="acheck381189" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3013&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3013">Partial response signaling for improved chromatic dispersion tolerance in intensity modulation optical transmissions</a></p>
+				<p class="article-authors">Cristian Prodaniuc, Nebojsa Stojanovic, Fotini Karinou, and Roberto Llorente</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3013-3019 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3013&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3013&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381190" id="acheck381190" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3020&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3020">Tunable arbitrary unitary transformer based on multiple sections of multicore fibers with phase control</a></p>
+				<p class="article-authors">Junhe Zhou, Jianjie Wu, and Qinsong Hu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3020-3036 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3020&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3020&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381191" id="acheck381191" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3037&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3037">3.2 Gigabit-per-second Visible Light Communication Link with InGaN/GaN MQW Micro-photodetector</a></p>
+				<p class="article-authors">Kang-Ting Ho, Rui Chen, Guangyu Liu, Chao Shen, Jorge Holguin-Lerma, Abeer A. Al-Saggaf, Tien Khee Ng, Mohamed-Slim Alouini, Jr-Hau He, and Boon S. Ooi</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3037-3045 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3037&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3037&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381192" id="acheck381192" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3046&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3046">All passive architecture for high efficiency cascaded Raman conversion</a></p>
+				<p class="article-authors">V. Balaswamy, S. Arun, G. Chayran, and V. R. Supradeepa</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3046-3053 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3046&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3046&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381193" id="acheck381193" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3054&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3054">Novel Rydberg eight-wave mixing process controlled in the nonlinear phase of a circularly polarized field</a></p>
+				<p class="article-authors">Junling Che, Zhaoyang Zhang, Mingliang Hu, Xuewei Shi, and Yanpeng Zhang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3054-3066 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3054&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3054&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381194" id="acheck381194" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3067&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3067">Enhancement of high-order harmonics in a plasma waveguide formed in clustered Ar gas</a></p>
+				<p class="article-authors">Xiaotao Geng, Shiyang Zhong, Guanglong Chen, Weijun Ling, Xinkui He, Zhiyi Wei, and Dong Eon Kim</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3067-3074 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3067&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3067&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381195" id="acheck381195" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3075&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3075">Single-photodiode per polarization receiver with signal-signal beat interference suppression through heterodyne detection</a></p>
+				<p class="article-authors">Bill Corcoran, Benjamin Foo, and Arthur J. Lowery</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3075-3086 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3075&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3075&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381196" id="acheck381196" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3087&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3087">Underwater wireless optical communication using an arrayed transmitter/receiver and optical superimposition-based PAM-4 signal</a></p>
+				<p class="article-authors">Meiwei Kong, Yifei Chen, Rohail Sarwar, Bin Sun, Zhiwei Xu, Jun Han, Jiawang Chen, Huawei Qin, and Jing Xu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3087-3097 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3087&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3087&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691935" name="articles" value="381197" id="acheck381197" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3098&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3098">Ultrasensitive sensing in air based on graphene-coated hollow core fibers</a></p>
+				<p class="article-authors">Meng Huang, Conghao Yang, Bing Sun, Zuxing Zhang, and Lin Zhang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3098-3107 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3098&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3098&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691936')"/>
+							<h2 class="toc-header--level3 ">Coherence and Statistical Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691936" name="articles" value="381055" id="acheck381055" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2303&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2303">Monte Carlo simulations of three-dimensional electromagnetic Gaussian Schell-model sources</a></p>
+				<p class="article-authors">Milo W. Hyde, Santasri R. Bose-Pillai, and Olga Korotkova</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2303-2313 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2303&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2303&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691937')"/>
+							<h2 class="toc-header--level3 ">Detectors</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691937" name="articles" value="381053" id="acheck381053" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2280&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2280">Cylindrical microlensing for enhanced collection efficiency of small pixel SPAD arrays in single-molecule localisation microscopy</a></p>
+				<p class="article-authors">Istvan Gyongy, Amy Davies, Benjamin Gallinet, Neale A.W. Dutton, Rory R. Duncan, Colin Rickman, Robert K. Henderson, and Paul A. Dalgarno</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2280-2291 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2280&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2280&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691938')"/>
+							<h2 class="toc-header--level3 ">Diffraction and Gratings</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691938" name="articles" value="381058" id="acheck381058" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2335&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2335">Fabrication of hybrid optical line generator by direct machining</a></p>
+				<p class="article-authors">Toni Saastamoinen, Juha Väyrynen, Jarkko Mutanen, Hemmo Tuovinen, Anni Eronen, Kari Mönkkönen, and Markku Kuittinen</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2335-2340 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2335&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2335&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691938" name="articles" value="381075" id="acheck381075" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2517&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2517">Numerical study of a DoFP polarimeter based on the self-organized nanograting array</a></p>
+				<p class="article-authors">Canhua Xu, Jing Ma, Chaozhen Ke, Yantang Huang, Zhiping Zeng, and Weixiang Weng</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2517-2527 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2517&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2517&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691939')"/>
+							<h2 class="toc-header--level3 ">Geometric Optics and Optical Design</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691939" name="articles" value="381064" id="acheck381064" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2390&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2390">Design, fabrication and space suitability tests of wide field of view, ultra-compact, and high resolution telescope for space application</a></p>
+				<p class="article-authors">M. Tumarina, M. Ryazanskiy, S. Jeong, G. Hong, N. Vedenkin, I.H. Park, and A. Milov</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2390-2399 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2390&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2390&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691940')"/>
+							<h2 class="toc-header--level3 ">Holography</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691940" name="articles" value="381060" id="acheck381060" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2349&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2349">Color dynamic holographic display with wide viewing angle by improved complex amplitude modulation</a></p>
+				<p class="article-authors">Xin Li, Juan Liu, Tao Zhao, and Yongtian Wang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2349-2358 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2349&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2349&seq=0" target="_blank" id="link-pdf">PDF</a> 
+						&nbsp;[Suppl. Mat. (1)]
+					
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691941')"/>
+							<h2 class="toc-header--level3 ">Image Processing</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691941" name="articles" value="380954" id="acheck380954" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2181&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2181">Spatial multiplexing reconstruction for Fourier-transform ghost imaging via sparsity constraints</a></p>
+				<p class="article-authors">Ruiguo Zhu, Hong Yu, Ronghua Lu, Zhijie Tan, and Shensheng Han</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2181-2190 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2181&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2181&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691941" name="articles" value="380955" id="acheck380955" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2191&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2191">Phase retrieval in generalized optical interferometry systems</a></p>
+				<p class="article-authors">Wesley E. Farriss, James R. Fienup, Tanya Malhotra, and A. Nick Vamivakas</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2191-2202 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2191&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2191&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691941" name="articles" value="381198" id="acheck381198" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3108&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3108">Iterative least-squares solver for generalized maximum-likelihood ptychography</a></p>
+				<p class="article-authors">Michal Odstrčil, Andreas Menzel, and Manuel Guizar-Sicairos</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3108-3123 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3108&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3108&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691942')"/>
+							<h2 class="toc-header--level3 ">Imaging Systems and Displays</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691942" name="articles" value="380956" id="acheck380956" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2203&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2203">Mid-infrared upconversion based hyperspectral imaging</a></p>
+				<p class="article-authors">Saher Junaid, Jan Tomko, Mykhaylo P. Semtsiv, Jan Kischkat, W. Ted Masselink, Christian Pedersen, and Peter Tidemand-Lichtenberg</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2203-2211 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2203&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2203&seq=0" target="_blank" id="link-pdf">PDF</a> 
+						&nbsp;[Suppl. Mat. (5)]
+					
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691943')"/>
+							<h2 class="toc-header--level3 ">Instrumentation, Measurement, and Metrology</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691943" name="articles" value="381162" id="acheck381162" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2944&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2944">Surface and thickness measurement of transparent thin-film layers utilizing modulation-based structured-illumination microscopy</a></p>
+				<p class="article-authors">Zhongye Xie, Yan Tang, Yi Zhou, and Qinyuan Deng</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2944-2953 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2944&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2944&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691944')"/>
+							<h2 class="toc-header--level3 ">Integrated Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691944" name="articles" value="380957" id="acheck380957" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2212&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2212">Wavelength division multiplexer based on cavity-resonator-integrated guided-mode resonance filters for a compact multi-wavelength light source</a></p>
+				<p class="article-authors">Junichi Inoue, Atsushi Tsuji, Kenji Kintaka, Kenzo Nishio, and Shogo Ura</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2212-2219 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2212&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2212&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691944" name="articles" value="380958" id="acheck380958" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2220&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2220">Broadband 2-µm emission on silicon chips: monolithically integrated Holmium lasers</a></p>
+				<p class="article-authors">Nanxi Li, Emir Salih Magden, Zhan Su, Neetesh Singh, Alfonso Ruocco, Ming Xin, Matthew Byrd, Patrick T. Callahan, Jonathan D. B. Bradley, Christopher Baiocco, Diedrik Vermeulen, and Michael R. Watts</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2220-2230 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2220&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2220&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691944" name="articles" value="381068" id="acheck381068" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2435&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2435">Design of a compact CMOS-compatible photonic antenna by topological optimization</a></p>
+				<p class="article-authors">Julián L. Pita, Ivan Aldaya, Paulo Dainese, Hugo E. Hernandez-Figueroa, and Lucas H. Gabrielli</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2435-2442 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2435&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2435&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691944" name="articles" value="381086" id="acheck381086" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2528&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2528">On-chip platform for a phased array with minimal beam divergence and wide field-of-view</a></p>
+				<p class="article-authors">Moshe Zadka, You-Chia Chang, Aseema Mohanty, Christopher T. Phare, Samantha P. Roberts, and Michal Lipson</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2528-2534 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2528&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2528&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691945')"/>
+							<h2 class="toc-header--level3 ">Lasers and Laser Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691945" name="articles" value="381057" id="acheck381057" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2325&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2325">Rate equation modeling of the frequency noise and the intrinsic spectral linewidth in quantum cascade lasers</a></p>
+				<p class="article-authors">Xing-Guang Wang, Frédéric Grillot, and Cheng Wang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2325-2334 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2325&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2325&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691945" name="articles" value="381094" id="acheck381094" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2625&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2625">High-contrast front end based on cascaded XPWG and femtosecond OPA for 10-PW-level Ti:sapphire laser</a></p>
+				<p class="article-authors">Linpeng Yu, Yi Xu, Yanqi Liu, Yanyan Li, Shuai Li, Zhengzheng Liu, Wenkai Li, Fenxiang Wu, Xiaojun Yang, Yanli Yang, Cheng Wang, Xiaoming Lu, Yuxin Leng, Ruxin Li, and Zhizhan Xu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2625-2633 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2625&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2625&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691945" name="articles" value="381145" id="acheck381145" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2829&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2829">Dynamics of a broad-band quantum cascade laser: from chaos to coherent dynamics and mode-locking</a></p>
+				<p class="article-authors">L. L. Columbo, S. Barbieri, C. Sirtori, and M. Brambilla</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2829-2847 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2829&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2829&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691945" name="articles" value="381199" id="acheck381199" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3124&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3124">Flat amplitude and wide multiwavelength Brillouin/erbium fiber laser based on Fresnel reflection in a micro-air cavity design</a></p>
+				<p class="article-authors">A. W. Al-Alimi, A. R. Sarmani, M. H. Al-Mansoori, G. Lakshminarayana, and M. A. Mahdi</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3124-3137 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3124&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3124&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691945" name="articles" value="381200" id="acheck381200" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3138&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3138">Efficient 240W single-mode 1018nm laser from an Ytterbium-doped 50/400&#x00B5;m all-solid photonic bandgap fiber</a></p>
+				<p class="article-authors">Fanting Kong, Guancheng Gu, Thomas W. Hawkins, Maxwell Jones, Joshua Parsons, Monica T. Kalichevsky-Dong, Stephen P. Palese, Eric Cheung, and Liang Dong</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3138-3144 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3138&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3138&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691946')"/>
+							<h2 class="toc-header--level3 ">Metamaterials</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691946" name="articles" value="380959" id="acheck380959" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2231&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2231">Giant power enhancement for quasi-omnidirectional light radiation via &#x03B5;-near-zero materials</a></p>
+				<p class="article-authors">Shuomin Zhong, Taijun Liu, Jifu Huang, and Yungui Ma</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2231-2241 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2231&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2231&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691946" name="articles" value="380960" id="acheck380960" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2242&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2242">Analysis of the thickness dependence of metamaterial absorbers at terahertz frequencies</a></p>
+				<p class="article-authors">Guangwu Duan, Jacob Schalch, Xiaoguang Zhao, Jingdi Zhang, Richard D. Averitt, and Xin Zhang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2242-2251 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2242&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2242&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691946" name="articles" value="381072" id="acheck381072" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2478&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2478">Customizing longitudinal electric field profiles using spatial dispersion in dielectric wire arrays</a></p>
+				<p class="article-authors">Taylor Boyd, Jonathan Gratus, Paul Kinsler, and Rosa Letizia</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2478-2494 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2478&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2478&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691946" name="articles" value="381159" id="acheck381159" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2905&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2905">High-quality trapped modes in all-dielectric metamaterials</a></p>
+				<p class="article-authors">Vladimir R. Tuz, Vyacheslav V. Khardikov, Anton S. Kupriianov, Kateryna L. Domina, Su Xu, Hai Wang, and Hong-Bo Sun</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2905-2916 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2905&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2905&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691946" name="articles" value="381160" id="acheck381160" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2917&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2917">Anti-reflection coating design for metallic terahertz meta-materials</a></p>
+				<p class="article-authors">Matteo Pancaldi, Ryan Freeman, Matthias Hudl, Matthias C. Hoffmann, Sergei Urazhdin, Paolo Vavassori, and Stefano Bonetti</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2917-2927 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2917&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2917&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691947')"/>
+							<h2 class="toc-header--level3 ">Microscopy</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691947" name="articles" value="381056" id="acheck381056" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2314&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2314">Three-dimensional resolution-enhancement divided aperture correlation-differential confocal microscopy with nanometer axial focusing capability</a></p>
+				<p class="article-authors">Lirong Qiu, Yun Wang, Hanxu Wu, Yingbin Sun, Han Cui, Weiqian Zhao, Liang Yuan, and Chunlian Zhan</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2314-2324 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2314&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2314&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691947" name="articles" value="381061" id="acheck381061" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2359&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2359">All-optical microscope autofocus based on an electrically tunable lens and a totally internally reflected IR laser</a></p>
+				<p class="article-authors">M. Bathe-Peters, P. Annibale, and M. J. Lohse</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2359-2368 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2359&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2359&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691948')"/>
+							<h2 class="toc-header--level3 ">Nonlinear Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691948" name="articles" value="380961" id="acheck380961" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2252&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2252">Theoretical study of polarization dependence of carrier-induced refractive index change of quantum dot</a></p>
+				<p class="article-authors">Qingyuan Miao, Ziyi Yang, Jianji Dong, Ping-An He, and Dexiu Huang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2252-2260 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2252&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2252&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691948" name="articles" value="381074" id="acheck381074" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2509&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2509">Generation of high-field terahertz pulses in an HMQ-TMS organic crystal pumped by an ytterbium laser at 1030 nm</a></p>
+				<p class="article-authors">Andrea Rovere, Young-Gyun Jeong, Riccardo Piccoli, Seung-Heon Lee, Seung-Chul Lee, O-Pil Kwon, Mojca Jazbinsek, Roberto Morandotti, and Luca Razzari</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2509-2516 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2509&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2509&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691948" name="articles" value="381201" id="acheck381201" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3145&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3145">Analysis of the nonlinear Kerr effects in optical transmission systems that deploy optical phase conjugation</a></p>
+				<p class="article-authors">Mohammad A. Z. Al-Khateeb, Md. Asif Iqbal, Mingming Tan, Abdallah Ali, Mary McCarthy, Paul Harper, and Andrew D. Ellis</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3145-3160 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3145&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3145&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691949')"/>
+							<h2 class="toc-header--level3 ">Optical Communications</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691949" name="articles" value="381146" id="acheck381146" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2848&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2848">Channel likelihood correction for photon-counting array receivers in the presence of dead time and jitters</a></p>
+				<p class="article-authors">Jingsong Xiang, Yuanming Jia, Chenhui Deng, Sheng Huang, Changping Li, Xueli Chen, Pei Zhang, and Yimiao Wu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2848-2856 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2848&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2848&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691949" name="articles" value="381157" id="acheck381157" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2884&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2884">5 Gbps wireless transmission link with an optically pumped uni-traveling carrier photodiode mixer at the receiver</a></p>
+				<p class="article-authors">Ahmad W. Mohammad, Haymen Shams, Katarzyna Balakier, Chris Graham, Michele Natrella, Alwyn J. Seeds, and Cyril C. Renaud</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2884-2890 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2884&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2884&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691949" name="articles" value="381163" id="acheck381163" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2954&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2954">Effect of controllable parameter synchronization on the ensemble average bit error rate of space-to-ground downlink chaos laser communication system</a></p>
+				<p class="article-authors">Mi Li, Yifeng Hong, Yuejiang Song, and Xuping Zhang</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2954-2964 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2954&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2954&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691950')"/>
+							<h2 class="toc-header--level3 ">Optical Trapping and Manipulation</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691950" name="articles" value="381066" id="acheck381066" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2410&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2410">Depth-resolved measurement of optical radiation-pressure forces with optical coherence tomography</a></p>
+				<p class="article-authors">Nichaluk Leartprapun, Rishyashring R. Iyer, and Steven G. Adie</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2410-2426 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2410&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2410&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691951')"/>
+							<h2 class="toc-header--level3 ">Physical Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691951" name="articles" value="381091" id="acheck381091" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2584&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2584">Generation of arbitrary axisymmetrically polarized pulses by using the combination of 4-f spatial light modulator and common-path optical system</a></p>
+				<p class="article-authors">Masato Suzuki, Keisaku Yamane, Moritsugu Sakamoto, Kazuhiko Oka, Yasunori Toda, and Ryuji Morita</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2584-2598 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2584&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2584&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691952')"/>
+							<h2 class="toc-header--level3 ">Plasmonics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691952" name="articles" value="381147" id="acheck381147" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2857&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2857">Robust manipulation of light using topologically protected plasmonic modes</a></p>
+				<p class="article-authors">Chenxu Liu, M.V. Gurudev Dutt, and David Pekker</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2857-2872 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2857&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2857&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691953')"/>
+							<h2 class="toc-header--level3 ">Quantum Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691953" name="articles" value="380962" id="acheck380962" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2261&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2261">Improvement of reliability in multi-interferometer-based counterfactual deterministic communication with dissipation compensation</a></p>
+				<p class="article-authors">Chao Liu, Jinhong Liu, Junxiang Zhang, and Shiyao Zhu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2261-2269 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2261&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2261&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691953" name="articles" value="381054" id="acheck381054" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2292&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2292">Engineering steady Knill-Laflamme-Milburn state of Rydberg atoms by dissipation</a></p>
+				<p class="article-authors">Dong-Xiao Li, Xiao-Qiang Shao, Jin-Hui Wu, X. X. Yi, and Tai-Yu Zheng</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2292-2302 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2292&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2292&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691954')"/>
+							<h2 class="toc-header--level3 ">RF and Microwave Photonics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691954" name="articles" value="381071" id="acheck381071" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2462&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2462">Optimal design of a microring cavity optical modulator for efficient RF-to-optical conversion</a></p>
+				<p class="article-authors">Yossef Ehrlichman, Anatol Khilo, and Miloš A. Popović</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2462-2477 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2462&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2462&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691954" name="articles" value="381093" id="acheck381093" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2613&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2613">Reconfigurable meta-mirror for wavefronts control: applications to microwave antennas</a></p>
+				<p class="article-authors">Badreddine Ratni, André de Lustrac, Gérard-Pascal Piau, and Shah Nawaz Burokur</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2613-2624 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2613&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2613&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691955')"/>
+							<h2 class="toc-header--level3 ">Scattering</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691955" name="articles" value="381062" id="acheck381062" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2369&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2369">Scattering media characterization with phase-only wavefront modulation</a></p>
+				<p class="article-authors">F. Mariani, W. Löeffler, M. Aas, O. S. Ojambati, P. Hong, W. L. Vos, and M. P. van Exter</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2369-2379 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2369&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2369&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691955" name="articles" value="381161" id="acheck381161" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2928&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2928">Mie scattering of partially coherent light: controlling absorption with spatial coherence</a></p>
+				<p class="article-authors">J. Alejandro Gonzaga-Galeana and Jorge R. Zurita-Sánchez</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2928-2943 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2928&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2928&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691956')"/>
+							<h2 class="toc-header--level3 ">Sensors</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691956" name="articles" value="381202" id="acheck381202" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-3161&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-3161">Robust label-free biosensing using microdisk laser arrays with on-chip references</a></p>
+				<p class="article-authors">S. F. Wondimu, M. Hippler, C. Hussal, A. Hofmann, S. Krämmer, J. Lahann, H. Kalt, W. Freude, and C. Koos</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 3161-3173 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-3161&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-3161&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691957')"/>
+							<h2 class="toc-header--level3 ">Spectroscopy</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691957" name="articles" value="380963" id="acheck380963" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2270&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2270">Time- and frequency-resolved fluorescence with a single TCSPC detector via a Fourier-transform approach</a></p>
+				<p class="article-authors">Antonio Perri, John H. Gaida, Andrea Farina, Fabrizio Preda, Daniele Viola, Matteo Ballottari, Jürgen Hauer, Sandro De Silvestri, Cosimo D’Andrea, Giulio Cerullo, and Dario Polli</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2270-2279 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2270&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2270&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691958')"/>
+							<h2 class="toc-header--level3 ">Terahertz Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691958" name="articles" value="381069" id="acheck381069" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2443&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2443">Thermally induced tunability of a terahertz metamaterial by using a specially designed nematic liquid crystal mixture</a></p>
+				<p class="article-authors">Rafał Kowerdziej, Marek Olifierczuk, and Janusz Parka</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2443-2452 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2443&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2443&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691959')"/>
+							<h2 class="toc-header--level3 ">Ultrafast Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691959" name="articles" value="381096" id="acheck381096" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2643&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2643">High-speed &#x201C;multi-grid&#x201D; pulse-retrieval algorithm for frequency-resolved optical gating</a></p>
+				<p class="article-authors">Rana Jafari and Rick Trebino</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2643-2649 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2643&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2643&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691959" name="articles" value="381148" id="acheck381148" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2873&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2873">Time-resolved tomography of ultrafast laser-matter interaction</a></p>
+				<p class="article-authors">Klaus Bergner, Daniel Flamm, Michael Jenne, Malte Kumkar, Andreas Tünnermann, and Stefan Nolte</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2873-2883 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2873&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2873&seq=0" target="_blank" id="link-pdf">PDF</a> 
+						&nbsp;[Suppl. Mat. (4)]
+					
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+					<div class="row">
+				      	<div class="col-sm-12">
+					      	
+				      		<input type="checkbox" class="checkbox-floated hidden-xs hidden-sm" onclick="tocCheckAll(this,'l3-691960')"/>
+							<h2 class="toc-header--level3 ">Vision, Color, and Visual Optics</h2>
+						</div>
+					</div>
+					
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="media-twbs">
+			<div class="media-twbs-left">
+				<input type="checkbox" class="checkbox-floated hidden-sm hidden-xs l3-691960" name="articles" value="381070" id="acheck381070" aria-labelledby="actionLabel-article"/>
+				<img src="/getThumbnail.cfm?uri=oe-26-3-2453&s=n" class="thumbnail" style="max-width: 70px;" aria-hidden="true" role="presentation" tabindex="-1"/>
+			</div>
+			<div class="media-twbs-body">
+				<p class="article-title"><a href="/abstract.cfm?uri=oe-26-3-2453">On-chip integratable all-optical quantizer using cascaded step-size MMI</a></p>
+				<p class="article-authors">Ye Tian, Jifang Qiu, Zhuili Huang, Yingying Qiao, Zhenli Dong, and Jian Wu</p>
+				<p style="color: #999">
+					Opt. Express <strong>26</strong>(3), 2453-2461 (2018) &nbsp;<strong>View:</strong>
+							<a href="/viewmedia.cfm?uri=oe-26-3-2453&seq=0&html=true" id="link-full">HTML</a> |
+							<a href="/viewmedia.cfm?uri=oe-26-3-2453&seq=0" target="_blank" id="link-pdf">PDF</a> 
+				</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+</div></div>
+			
+	</div>
+	</form>
+</section>
+<script type="text/JavaScript">
+var thisJournal = '4';
+var currentSort = 'issue';
+</script>
+				</div>
+
+				<div class="sidebar col-md-3 col-sm-4">
+					<section class="sidebar-module journal-search">
+  <h3 class="sidebar-section-title hidden-xs">Search this Journal</h3>
+
+  <input type="hidden" id="journalSearchJournal" value="oe">
+  <div class="row controls-row hidden-xs">
+    <div class="col-xs-12">
+      <input id="journalSearchKeyword" type="text" class="form-control" placeholder="Keyword / Author" />
+    </div>
+  </div>
+
+  <div class="controls-row hidden-xs">
+    <div class="col-xs-3 paddingless-input">
+      <label>Volume</label>
+      <input id="journalSearchVol" type="text" class="form-control" placeholder="" />
+    </div>
+    <div class="col-xs-3 paddingless-input">
+      <label>Issue</label>
+      <input id="journalSearchIss" type="text" class="form-control" placeholder="" />
+    </div>
+    <div class="col-xs-3 paddingless-input">
+      <label>Page</label>
+      <input id="journalSearchPage" type="text" class="form-control" placeholder="" />
+    </div>
+    <div class="col-xs-3 paddingless-input">
+      <button type="button" id="journalSearch" class="btn btn-primary btn-sm journal-search-btn">
+        <span class="icon-search icon-white"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+	<ul class="filter-set hidden-xs">
+		<li class="filter filter-icons"><i class="icon-rss journal-filter-icon"></i> <a href="http://metadata.osa.org/rss/infobase/opex_feed.xml">RSS</a></li>
+		<li class="filter filter-icons"><i class="icon-citation-alert journal-filter-icon"></i> <a href="/user/toc_alerts_subscribe.cfm">Create Content Alerts</a></li>
+	</ul>
+<hr>
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="container ft-top">
+	<div class="pull-left">
+		<ul class="nav navbar-nav navbar-ft">
+			<li class="dropdown ft-nav-left"><a href="/">Home</a></li>
+			<li class="dropdown ft-nav-right"><a href="#">To Top <span class="fi-arrow-up"></span></a></li>
+			
+		</ul>
+	</div>
+	<div class="pull-right">
+		<ul class="nav navbar-nav navbar-right navbar-ft">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Favorites <strong class="caret"></strong></a>
+				<ul class="dropdown-menu up">
+			          
+          <li><a href="/user">Go to My Account</a></li>
+          
+          <li><a href="#" data-toggle="modal" data-target="#userLogin">Login to access favorites</a></li>
+          
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Pages <strong class="caret"></strong></a>
+				<ul class="dropdown-menu up recent-page-list">
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<div id="formErrors" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal" aria-label="close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">Field Error</h4>
+			</div>
+			<div class="modal-body">
+				<p id="formErrorsText"></p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary" data-dismiss="modal">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="avsModal" class="avs-modal">
+  <div id="avsModalContent" class="avs-modal-content">
+    <strong>Select <span id="titleFiltersPopup"></span> as filters</strong>
+    
+    <hr>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-collapse">
+          <input id="input-popup-selectize" type="text" class="form-control selectized" placeholder="(type names or look up list)" tabindex="-1"/>
+          <div class="selectize-control form-control multi"></div>
+        </div>	
+      </div>
+    </div>
+    <hr>
+    <ul id="checkBoxList"></ul>
+    <hr>
+    <span id="avsModalSubmit" class="btn btn-primary">Select Topics</span> <span id="avsModalClose" class="cancel"> Cancel</span>
+  </div>
+</div>
+<div class="container ft-links"><a id="global-nav"></a>
+  <div class="col-sm-3">
+    <ul class="ft-links-list">
+    <li><a href="/about.cfm">Journals</a></li>
+    <li><a href="/conferences.cfm">Proceedings</a></li>
+    <li class="bullet hidden-xs"><a href="/conferences.cfm">By Year</a></li>
+    <li class="bullet hidden-xs"><a href="/conferences.cfm?findby=conference">By Name</a></li>
+    <li class="ft-links-header hidden-xs">Regional Sites</li>
+    <li class="hidden-xs"><a href="/china/">OSA Publishing China</a></li>
+  </ul>
+  </div>
+
+ <div class="col-sm-3">
+  <ul class="ft-links-list">
+    <li class="ft-links-header">Information for</li>
+    <li><a href="/author/author.cfm">Authors</a></li>
+    <li><a href="/submit/review/peer_review.cfm">Reviewers</a></li>
+    <li><a href="/library/">Librarians</a></li>
+  </ul>
+  <ul class="ft-links-list">
+    <li class="ft-links-header">Open Access Information</li>
+    <li><a href="/submit/review/open-access-policy-statement.cfm">Open Access Statement and Policy</a></li>
+    <li><a href="/library/license_v1.cfm">Terms for Journal Article Reuse</a></li>
+  </ul>
+  </div>
+
+  <div class="col-sm-3">
+    <ul class="ft-links-list">
+    <li class="ft-links-header">Other Resources</li>
+    <li><a href="/books/default.cfm">OSAP Bookshelf</a></li>
+    <li><a href="/oida/reports.cfm">OIDA Reports</a></li>
+    <li><a href="http://www.osa-opn.org" target="_blank">Optics &amp; Photonics News <span class="fa fa-external-link"></span></a></li>
+    <li><a href="http://imagebank.osa.org" target="_blank">Optics ImageBank <span class="fa fa-external-link"></span></a></li>
+    <li><a href="/spotlight/">Spotlight on Optics</a></li>
+  </ul>
+  <!-- mobile only regional sites link -->
+  <ul class="ft-links-list hidden-sm hidden-md hidden-lg">
+      <li class="ft-links-header">Regional Sites</li>
+      <li><a href="/china/">OSA Publishing China</a></li>
+  </ul>
+  </div>
+
+  <div class="col-sm-3">
+    <ul class="ft-links-list">
+    <li class="ft-links-header">About</li>
+    <li><a href="/about.cfm">About OSA Publishing</a></li>
+    <li><a href="/benefitslog.cfm">About My Account</a></li>
+    <li><a href="/contactus.cfm">Contact Us</a></li>
+	<li><a href="#" onclick="popUpWindow('/submitFeedback.cfm?url='+escape(document.location.href),700,490); return false;">Send Us Feedback</a></li>
+	</ul>
+  </div>
+</div>
+
+<div class="ft-bottom">
+  <div class="container">
+    <div class="col-sm-6">
+      &copy; Copyright 2018 | The Optical Society. All Rights Reserved
+    </div>
+    <div class="col-sm-6 ft-right">
+      <a href="/privacy.cfm">Privacy</a> | <a href="/termsofuse.cfm">Terms of Use</a>
+    </div>
+  </div>
+</div> 
+<div class="modal fade" id="userLogin">
+  <div class="modal-dialog login-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Login or <a href="https://account.osa.org/eweb/dynamicpage.aspx?sso=1&site=osac&webcode=loginrequired&url_success=https%3A%2F%2Fwww%2Eosapublishing%2Eorg%2Foe%2Fupcomingissue%2Ecfm%3Frwjcode%3Doe%26usertoken%3D%7Btoken%7D">Create Account</a></h4>
+      </div>
+      <div class="modal-body">
+
+        <form class="form-horizontal" role="form">
+
+          <div class="alert alert-danger loginErr"></div>
+          <div class="alert alert-warning loginLoading">Please wait...</div>
+
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" autofocus>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              <span class="help-block"><a href="https://account.osa.org/eweb/Dynamicpage.aspx?webcode=forgotpassword*Site=osac">Forgot your password?</a></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="rememberme"> Remember me on this computer
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-primary" id="loginButton">Login</button>
+              <button type="submit" class="btn btn-default" data-dismiss="modal" data-target="#userLogin">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="col-xs-12" style="text-align: left"><a href="https://auth.osa.org/connect/authorize?client_id=osap&response_type=id_token&scope=openid email profile affiliation&redirect_uri=https%3A%2F%2Fwww%2Eosapublishing%2Eorg%2Fdefault%2Ecfm&state=E78A2678-BAE5-4E9A-915EE080C6B4EA37|https%3A%2F%2Fwww%2Eosapublishing%2Eorg%2Fupcomingissue%2Ecfm%3Frwjcode%3Doe&nonce=E78A2678-BAE5-4E9A-915EE080C6B4EA37&acr_values=idp:cstnet&response_mode=form_post">CAoS Institutions (China) Login</a></div>
+      </div>
+      <div class="modal-footer">
+        <div class="col-xs-6" style="text-align: left"><a href="/privacy.cfm">OSA Privacy Policy</a></div>
+        <div class="col-xs-6"><a href="http://www.osa.org/en-us/help/">Need help?</a> <span class="fi-info"></span></div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --> 
+	</div>
+
+<!-- <script>
+document.write('<script src=' +
+('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+'.js><\/script>')
+</script> -->
+
+<script src="/js/vendor/jquery-1.10.2.min.js"></script>
+<script src="/js/vendor/jquery.autocomplete.min.js"></script>
+<script src="/js/vendor/selectize.js"></script>
+<script src="/js/vendor/selectize.custom.js"></script>
+<script src="/js/vendor/sly.min.js"></script>
+<script src="/js/jquery.tinysort.min.js"></script>
+<script src="/js/app.js?v=01162018"></script>
+<script src="/js/recentPages.js?v=01012018"></script>
+
+<script src="/js/vendor/bootstrap-concat.min.js"></script>
+<script src="/js/quickpager.jquery.js"></script>
+<script src="/js/jquery.unveil.js"></script>
+
+<script type="text/javascript" src="/js/jquery.tokeninput.js"></script>
+<script type="text/javascript" src="/js/jquery.base64.js"></script>
+<script src="/js/search.js?v=01012018"></script>
+
+<script type="text/javascript" src="/js/underscore.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.10.2.custom.min.js"></script>
+
+<script type="text/javascript" src="/js/search/ApiClient.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Bus.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Config.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Constants.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Template.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Facet.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Pagination.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Results.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Search.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Topics.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Util.js?v=01012018"></script>
+<script type="text/javascript" src="/js/search/Main.js?v=01012018"></script>
+<!-- templates -->
+<script type="text/template" id="template-page-size-selector">
+    <%= selected %>
+    <ul class="dropdown-menu">
+        <%= unselected %>
+    </ul>
+</script>
+<script type="text/template" id="template-pagination-selected-page-size">
+    <a class="page_size_<%= size %> btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+      <%= size %>
+      <span class="caret"></span>
+    </a>
+</script>
+<script type="text/template" id="template-pagination-unselected-page-size">
+    <li><a class="page_size_<%= size %>" href="#"><%= size %></a></li>
+</script>
+
+<script type="text/template" id="template-pagination-unselected-page-number">
+    <li><a href="#" data-value="<%= number %>"><%= label %></a></li>
+</script>
+<script type="text/template" id="template-pagination-disabled-unselected-page-number">
+    
+</script>
+<script type="text/template" id="template-pagination-selected-page-number">
+    <li class="active"><a href="#" data-value="<%= number %>"><%= label %></a></li>
+</script>
+
+<script type="text/template" id="search-result-row">
+    <li class="sr-item">
+        <input type="checkbox" class="sri-select hidden-xs" name="articles" value="<%= documentUri %>"/>
+        <div class="sri-summary">
+            <h3 class="sri-title"><a href="<%= path %>abstract.cfm?uri=<%= documentUri %>&origin=search" target="_blank"><%= title %></a></h3>
+            <span class="sri-authors"><%= authors %></span>
+            <ul class="sri-details">
+                <li class="sri-year"><%= year %></li>
+                <li class="sri-journal"><i class="<%= access%>"></i> <%= name %><strong>&nbsp; View: <%= htmlLinks %><%= pdfLinks %></strong><%= xinfo %></li>
+                
+            </ul>
+            <div class="sri-toggle-extended fi-plus">
+            </div>
+        </div>
+
+        <div class="sri-extended">
+            <p class="sri-abstract"><%= abstract %></p>
+
+            <strong class="sri-hits-heading">
+                Search Hits
+            </strong>
+            <ul class="sri-hits list-unstyled">
+                <%= searchHits %>
+            </ul>
+            <img src="<%= imgLink%>" class="sri-image" height="50" width="50" alt="" onerror="this.parentNode.removeChild(this);" />
+        </div>
+    </li>
+</script>
+
+<script type="text/template" id="search-result-hit">
+    <li>&hellip;<%= hitText %>&hellip;</li>
+</script>
+
+<script type="text/template" id="search-result-snippet-highlighted"><strong><%= text %></strong></script>
+
+<script type="text/template" id="search-result-snippet-xinfo"> [<%= xinfo %>]</script>
+
+<script type="text/template" id="search-result-snippet-pdf"><a href="<%= pdfUri %>" target="_blank">PDF</a></script>
+
+<script type="text/template" id="search-result-snippet-html"><a href="<%= htmlUri %>" target="_blank">HTML</a> | </script>
+
+<script type="text/template" id="search-result-element-visible">display:inline</script>
+
+<script type="text/template" id="search-result-element-hidden">display:none</script>
+
+<script type="text/template" id="search-result-element-nbsp">&nbsp;</script>
+
+<script type="text/template" id="search-result-facet">
+    <h5 class="bg1">
+        <span class="float_l">
+            <input type="checkbox" name="chkAllFacet-<%= name %>">
+                <%= facetName %>
+            </input>
+        </span>
+        <%= moreLink %>
+        <a id="sortby-<%= name %>" class="sidebar_more white" href="#">Sort</a>
+    </h5>
+    <ul id="facet-values-<%= name %>">
+        <%= facetValues %>
+    </ul>
+</script>
+
+<script type="text/template" id="facet-publications">
+    <ul class="sf-list">
+        <li class="sf-list_list-item"><input id="publicationsAll" class="sf-select-all sf-list_input" type="checkbox" checked="checked" disabled="disabled"/> <label class="sf-list_label" for="publicationsAll">All</label></li>
+        <li class="sf-list_list-item"><input id="facet-publications-journals" class="sf-list_input" type="checkbox" name="publications"/> <label class="sf-list_label" for="facet-publications-journals">Journals <span class="facet-count">(<%= totalJournals %>)</span></label></li>
+        <li class="sf-list_list-item"><input id="facet-publications-proceedings" class="sf-list_input" type="checkbox" name="proceedings"/> <label class="sf-list_label" for="facet-publications-proceedings">Proceedings <span class="facet-count">(<%= totalProceedings %>)</span></label></li>
+    </ul>
+	</div>
+	<div class="sf-module sf-journals">
+		<div class="row2">
+    	<h3 id="facet-journal-show" class="sf-group-title collapsed">Journals</h3>
+		<div id="sortJournal" class="sf-sort"></div>
+		</div>
+            <div id="facet-journal-values">
+            </div>  
+	</div>
+	<div class="sf-module sf-proceedings">
+		<div class="row2">
+    	<h3 id="facet-proceeding-show" class="sf-group-title collapsed">Proceedings</h3>
+			<div id="sortProceeding" class="sf-sort"></div>
+		</div>
+		<div  id="facet-proceeding-values"></div>
+	</div>
+</script>
+
+<script type="text/template" id="search-result-facet-basics">
+
+    <ul class="sf-list">
+		<li class="sf-select-all"><input id="<%= allId %>" type="checkbox" checked="checked" disabled="disabled"/> All</li>
+		<%= values %>	
+		<li class="sf-expanded">
+			<a href="#" id="more-<%= allId %>" class="search-panel_more-link" data-toggle="modal" data-target="#modal-<%= allId %>">more <%=name%> &raquo;</a>
+			<div class="modal full fade" id="modal-<%= allId %>">
+				<div class="modal-dialog">
+					<div class="modal-content search">
+						<div class="row mbottom-20">
+							<div class="col-md-4">
+								<h3 class="modal-header search"><%= modalTitle %></h3>
+							</div>
+							<div class="col-md-6 col-md-offset-2">						
+								<input id="input-<%= allId%>" type="text" class="form-control selectized" placeholder="(type names or look up list)" tabindex="-1"></input>
+								<div class="selectize-control form-control multi"></div>                 					
+							</div>			
+						</div>
+						<div class="modal_option-container mbottom-20 scrollable" id="moreUl-<%=allId%>">
+						</div>
+						
+						<hr>
+						<a href="#" id="apply-<%= allId %>"  class="btn btn-primary" data-dismiss="modal">Apply Filters</a>
+						<a href="#" id="cancel-<%= allId %>" class="btn btn-default" data-dismiss="modal">Cancel</a>
+					</div>
+				</div>
+
+			</div>
+        </li>		
+	</ul>  	
+	
+</script>
+
+<script type="text/template" id="search-result-facet-terms">
+
+    <ul class="sf-list">
+		<li class="sf-select-all">
+			<input id="<%= allId %>" type="checkbox" checked="checked" disabled="disabled"/>
+			<label for="<%= allId %>">Remove all topic filters</label>
+		</li>
+		<%= values %>	
+		<li class="sf-expanded">
+			<a href="#" id="more-<%= allId %>" class="search-panel_more-link hidden-xs" data-toggle="modal" data-target="#modal-<%= allId %>">include more topics &raquo;</a>
+			<div class="modal full fade" id="modal-<%= allId %>">
+				<div class="modal-dialog">
+					<div class="modal-content search">
+						<div class="row mbottom-20">
+							<div class="col-md-4">
+								<h3 class="modal-header search">Optics &amp; Photonics Topics</h3>
+							</div>
+							<div class="col-md-6 col-md-offset-2">
+								<input id="input-<%= allId%>" type="text" class="form-control" placeholder="Search for a specific topic" tabindex="-1"></input>
+							</div>			
+						</div>
+						<div class="row mbottom-20">
+							<div class="col-md-12">
+								<strong>Browse the topics:</strong> 
+								Click the <svg class="selection-list_arrow"><use xlink:href="#right-arrow" /></svg> to reveal subtopics. Use the checkbox to select a topic to filter your search.
+							</div>
+						</div>
+
+						<div class="modal_option-container mbottom-20 scrollable" id="moreUl-<%=allId%>">
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<strong>Selected Topics</strong>
+							</div>
+						</div>
+
+						<div id="moreSelectedList"></div>
+						<div class="row"><div class="col-md-12">&nbsp;<!-- spacing row --></div></div>
+
+						<a href="#" id="apply-<%= allId %>" class="btn btn-primary" data-dismiss="modal">Add Selected Topic Filters</a>
+						<a href="#" id="cancel-<%= allId %>" class="btn btn-default" data-dismiss="modal">Cancel</a>
+					</div>
+				</div>
+			</div>
+        </li>		
+	</ul>  	
+	
+</script>
+
+<script type="text/template" id="search-result-facet-journal-proceedings">
+<ul class="sf-list">
+	<li class="sf-select-all"><label><input id="<%= allId %>" type="checkbox" checked> All</label></li>
+	<%= values %>
+	<li class="sf-expanded">
+		<a href="#" id="more-<%= allId %>" class="search-panel_more-link" data-toggle="modal" data-target="#modal-<%= allId %>" class="sf-expanded-toggle">more <%=name%> &raquo;</a>
+		<div class="modal full fade" id="modal-<%= allId %>">
+			<div class="modal-dialog">
+				<div class="modal-content search">
+					<div class="row mbottom-20">
+						<div class="col-md-4">
+							<h3 class="modal-header search"><%= modalTitle%></h3>
+						</div>
+						<div class="col-md-6 col-md-offset-2">
+							<input id="input-<%= allId%>" type="text" class="form-control selectized" placeholder="(type names or look up list)" tabindex="-1"></input>
+							<div class="selectize-control form-control multi"></div>                  
+							
+						</div>
+					</div>
+					<div class="modal_option-container mbottom-20 scrollable" id="moreUl-<%=allId%>">
+					</div>
+						
+						
+					<hr>
+					<a href="#" id="apply-<%= allId %>"  class="btn btn-primary" data-dismiss="modal">Apply Filters</a>
+					<a href="#" id="cancel-<%= allId %>" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				</div>
+			</div>
+		</div>
+    </li>
+ </ul>
+</script>
+
+<script type="text/template" id="search-result-facet-content">
+	
+	<ul  class="sf-list">
+		<%= values %>	
+	</ul>
+</script>
+
+<script type="text/template" id="facet-more-new-content">
+<div class="more-columns_container">
+	<div class="more-columns_column"><ul class="selection-list"><%= val1%></ul></div>
+	<div class="more-columns_column"><ul class="selection-list"><%= val2%></ul></div>
+	<div class="more-columns_column"><ul class="selection-list"><%= val3%></ul></div>
+</div>
+</script>
+
+<script type="text/template" id="facet-more-terms-div">
+
+<div class="more-columns_container">
+	<div class="more-columns_column" id="<%= name%>-col1"><%= val%></div>
+	<div class="more-columns_column" id="<%= name%>-col2"></div>
+	<div class="more-columns_column" id="<%= name%>-col3"></div>
+</div>
+
+</script>
+
+<script type="text/template" id="facet-more-terms-list">
+	<ul class="selection-list"><%= val%></ul>
+</script>
+
+<script type="text/template" id="search-result-facet-more">
+    <a id="more-<%= name %>" href="#" class="sidebar_more white">More</a>
+</script>
+
+<script type="text/template" id="search-result-facet-detail">
+    <a href="#" id="details-link-<%= id %>" class="sidebar_more black">details</a>
+    <ul id="details-container-<%= id %>" class="list-unstyled" style="display:none;" data-value="<%= valName %>"></ul>
+</script>
+
+<script type="text/template" id="search-result-facet-value">
+    <li class="sf-list_list-item <%= rowclass %>" style="<%= display %>">
+        <input type="checkbox" class="sf-list_input <%= boxstyle %>" name="chkFacet-<%= name %>" value="<%= code %>" data-value="<%= dataValue %>" id="<%= id %>" <%= checked %> acronym="<%= acronym %>" />
+	<% if (hasCloseButton === true) { %>
+		<div <% if (isbold != '') { %> class="sf-list_label sf-authors-bold" <% } else { %> class="sf-list_label" style="margin-bottom:5px"<% } %>><%= valName %><span class="facet-count"><%= valCount %></span> <span class="fa-times-circle-o fa facet-value_toggle"></span></div> <%= detail%> 
+	<% } else { %>
+		<label <%= title%> for="<%= id %>"  <% if (isbold != '') { %> class="sf-list_label sf-authors-bold" <% } else { %> class="sf-list_label" <% } %>><%= valName %> <span class="facet-count"><%= valCount %></span></label> <%= detail%> 
+	<% } %>
+    </li>
+</script>
+
+<script type="text/template" id="more-term-facet-value">
+    <li class="selection-list_list-item" style="<%= display %>">
+        <input class="selection-list_checkbox" type="checkbox" name="<%= name %>" data-value="<%= dataValue %>" <%= checked %> <%= boxstyle %>/><div class="selection-list_link" name="text-<%= name %>" data-value="<%= dataValue %>" <%= clazz %>><%= valName %><% if (valCount != "") { %> <span class="more-facet-count"><%= valCount %></span><% } %></div><% if (isx === true) { %><a href="#" class="selection-list_expander <%= inputname%>-expandin"><svg class="selection-list_arrow"><use xlink:href="#right-arrow" /></svg></a><% } %>
+    </li>
+</script>
+
+<script type="text/template" id="more-term-selected">
+    <div class="selected-facet" data-topic="<%= finalTopic %>">
+        <%= val %>
+        <a href="#" name="selected-x" data-value="<%= dataValue %>" count="<%= cnt %>" class="selected-facet_close" ><span class="fa-times-circle-o fa"></span></a>
+    </div>
+</script>
+
+<script type="text/template" id="search-result-facet-class">
+    class=""
+</script>
+<script type="text/template" id="search-result-facet-style-normal">
+    style="font-weight:normal"
+</script>
+
+<script type="text/template" id="search-result-facet-sort-popup">
+    <p>
+        <input type="radio" id='<%= name %>:item-order:ascending' name="facetSortBy" value='<%= name %>:item-order:ascending' >
+        <label for='<%= name %>:item-order:ascending'><%= label %> ascending</label><br>
+        <input type="radio" id='<%= name %>:item-order:descending' name="facetSortBy" value='<%= name %>:item-order:descending' >
+        <label for='<%= name %>:item-order:descending'><%= label %> descending</label><br>
+        <input type="radio" id='<%= name %>:frequency-order:ascending' name="facetSortBy" value='<%= name %>:frequency-order:ascending' >
+        <label for='<%= name %>:frequency-order:ascending'>Frequency ascending</label><br>
+        <input type="radio" id='<%= name %>:frequency-order:descending' name="facetSortBy" value='<%= name %>:frequency-order:descending'>
+        <label for='<%= name %>:frequency-order:descending'>Frequency descending</label>
+    </p>
+</script>
+
+<script type="text/template" id="filter-selected">
+    <li class="label filter-tag filter-tag--<%= filterType %>"> <%= filterValue %> <a class="inline-dismiss"><span name="filterSelected" id="<%= filterId %>" class="fi-x" data-value="<%= filterValue %>"></span></a></li>
+</script>
+  
+  <script type="text/template" id="filter-search">
+    <li class="filter-search label filter-tag filter-tag--<%= filterType %>"> <%= filterLabel %> <a class="inline-dismiss"><span name="filterSelected" id="<%= filterId %>" class="fi-x" data-value="<%= filterValue %>"></span></a></li>
+</script>
+
+<script type="text/template" id="publication-sort-template">
+		<button class="sf-sort-toggle"><span class="icon-sort"></span><span class="sr-only">sort</span></button>
+		<div class="sf-sort-popup">
+			<ul>
+				<li class="active"><a href="#" name="sort-<%= type%>" data-value="<%= type%>:frequency-order:descending">Article Count</a></li>
+				<li><a href="#" name="sort-<%= type%>" data-value="<%= type%>:item-order:ascending">Alphabetical A>Z</a></li>
+				<li><a href="#" name="sort-<%= type%>" data-value="<%= type%>:item-order:descending">Alphabetical Z>A</a></li>
+			</ul>
+		</div>
+
+</script>
+<script type="text/template" id="author-topic-sort-template">
+
+		<button class="sf-sort-toggle"><span class="icon-sort"></span><span class="sr-only">sort</span></button>
+		<div class="sf-sort-popup">
+			<ul>
+				<li class="active"><a href="#" name="sort-<%= type%>" data-value="<%= type%>:frequency-order:descending">Article Count</a></li>
+				<li><a href="#" name="sort-<%= type%>" data-value="<%= type%>:item-order:ascending">Alphabetical A>Z</a></li>
+				<li><a href="#" name="sort-<%= type%>" data-value="<%= type%>:item-order:descending">Alphabetical Z>A</a></li>
+			</ul>
+		</div>
+
+</script>
+<script type="text/template" id="year-sort-template">
+
+		<button class="sf-sort-toggle"><span class="icon-sort"></span><span class="sr-only">sort</span></button>
+		<div class="sf-sort-popup">
+			<ul>
+				<li class="active"><a href="#" name="sort-year" data-value="year:item-order:descending">Newest date first</a></li>
+				<li><a href="#" name="sort-year" data-value="year:item-order:ascending">Oldest date first</a></li>
+				<li><a href="#" name="sort-year" data-value="year:frequency-order:descending">Article Count</a></li>
+			</ul>
+		</div>
+
+</script>
+<script type="text/template" id="more-pop-up-template">
+		<%= values%>
+</script>
+<script type="text/template" id="loading-gif-template">
+	<li><img style="position:center; display:none;" src="../images/ajax-loader.gif"/></li>
+</script>
+<script type="text/template" id="all-plus-separator-template">
+    <li class="sf-select-all"><label><input id="<%= allId %>" type="checkbox" > All</label></li>
+</script>
+<script type="text/template" id="more-topic-column-header">
+	<li class="selection-list_header"><span class="fa fa-caret-right"></span><%= name %></li>
+</script>
+
+<script type="text/template" id="loader">
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped active" role="progress-bar" id="progress-<%= allId %>"></div>
+	</div>
+</script> 
+
+<script type="text/javascript">     
+	$(document).ready(function() {
+		$.get('/checkjs.cfm?s=K2FAKFK');
+		populateRecentPages();
+		$("img").removeClass("lazyimg").unveil(100);
+	});
+</script>
+<script type="text/javascript">
+
+ var gaAcct = "UA-1200622-15";
+
+ function downloadJSAtOnload() {
+ var element = document.createElement("script");
+ element.src = "/js/loadJS.js";
+ document.body.appendChild(element);
+ }
+ if (window.addEventListener)
+ window.addEventListener("load", downloadJSAtOnload, false);
+ else if (window.attachEvent)
+ window.attachEvent("onload", downloadJSAtOnload);
+ else window.onload = downloadJSAtOnload;
+ </script>
+
+
+<!-- web1 -->
+</body>
+</html> 
